@@ -31,8 +31,8 @@
 
 <header>
   <h1>Esla: Maxfiylik siyosati</h1>
-  <div class="meta">Privacy Policy &middot; Ilova: Esla (adi.esla) &middot; Kuchga kirgan sana: 2026-yil 4-oktabr</div>
-  <div class="nav"><a href="#uz">O'zbekcha</a><a href="#en">English</a></div>
+  <div class="meta">Privacy Policy &middot; Ilova: Esla (adi.esla) &middot; Kuchga kirgan sana: 2026-yil 4-oktabr &middot; Oxirgi yangilanish: 2026-yil 6-oktabr</div>
+  <div class="nav"><a href="#uz">O'zbekcha</a><a href="#en">English</a><a href="#delete-account">Hisobni o'chirish / Delete account</a></div>
 </header>
 
 <section class="lang" id="uz" lang="uz">
@@ -42,16 +42,18 @@
 
 <h2>2. Qanday ma'lumotlarni yig'amiz</h2>
 <h3>Akkaunt ma'lumotlari</h3>
-<p>Ilovaga Google akkaunti orqali kirasiz. Bunda ismingiz, elektron pochta manzilingiz va profil rasmingiz Google Sign-In va Firebase Authentication orqali bizga uzatiladi. Parolingizni biz ko'rmaymiz va saqlamaymiz.</p>
+<p>Ilovaga Google akkaunti orqali kirasiz. Bunda ismingiz, elektron pochta manzilingiz va profil rasmingiz havolasi (rasm Google'da saqlanadi) Google Sign-In va Firebase Authentication orqali bizga uzatiladi. Parolingizni biz ko'rmaymiz va saqlamaymiz.</p>
 <h3>O'quv ma'lumotlari</h3>
 <ul>
   <li>tanlangan til, daraja va bosqichlar, test natijalari;</li>
   <li>o'rganilgan so'zlar va takrorlash jarayoni (progress, streak, ball);</li>
-  <li>siz qo'shgan shaxsiy so'zlar (Kundalik lug'at) va ularning jadvali;</li>
+  <li>siz qo'shgan shaxsiy so'zlar ("Mening lug'atim") va ularning jadvali;</li>
   <li>ilova sozlamalari (interval, tungi rejim, shrift o'lchami va boshqalar).</li>
 </ul>
 <h3>Texnik ma'lumotlar</h3>
-<p>Ilova ishlashini yaxshilash uchun Firebase Analytics va Firebase Crashlytics orqali qurilma modeli, operatsion tizim versiyasi, ilova versiyasi, xatolik hisobotlari va ilovadan foydalanish statistikasi yig'iladi. Push-bildirishnomalar uchun qurilmaning bildirishnoma tokeni (Firebase Cloud Messaging) saqlanadi.</p>
+<p>Ilova ishlashini yaxshilash uchun Firebase Analytics va Firebase Crashlytics orqali qurilma modeli, operatsion tizim versiyasi, ilova versiyasi, xatolik hisobotlari va ilovadan foydalanish statistikasi yig'iladi. Push-bildirishnomalar uchun qurilmaning bildirishnoma tokeni Firebase Cloud Messaging tomonidan qayta ishlanadi; biz uni o'z bazamizga yozmaymiz. Yangi versiya borligini bilish uchun ilova Google Play (In-App Updates) va Firebase Remote Config'dan faqat versiya raqamini so'raydi; shaxsiy ma'lumot yuborilmaydi. Esla reklama identifikatorini (Advertising ID) yig'maydi.</p>
+<h3>Xato haqida xabar</h3>
+<p>Siz so'z yoki tarjimadagi xato haqida xabar yuborsangiz, xabar matni, so'z identifikatori va emailingiz saqlanadi. Bu faqat kontentni tuzatish uchun ishlatiladi va hisobingiz bilan birga o'chiriladi.</p>
 
 <h2>3. Ma'lumotlardan qanday foydalanamiz</h2>
 <ul>
@@ -63,16 +65,18 @@
 <p>Biz ma'lumotlaringizni sotmaymiz va reklama maqsadida uchinchi tomonlarga bermaymiz. Ilovada reklama yo'q.</p>
 
 <h2>4. Kamera va rasmlar</h2>
-<p>Rasmga olib so'z qo'shish funksiyasidan foydalansangiz, ilova kameraga yoki galereyaga kirish uchun ruxsat so'raydi. Rasmdagi matn qurilmangizda aniqlanadi (Google ML Kit). Aniqlangan so'zlarning tarjimasi qurilmada yoki tarjima xizmati orqali olinishi mumkin; bunda faqat so'z matni yuboriladi, rasm yuborilmaydi. Ruxsatni istalgan vaqtda telefon sozlamalaridan o'chirib qo'yishingiz mumkin, bunda faqat shu funksiya ishlamaydi.</p>
+<p>Rasmga olib so'z qo'shish funksiyasida rasmni telefoningizning kamera ilovasi yoki tizimning rasm tanlash oynasi orqali berasiz. Esla kamera ruxsatini so'ramaydi va galereyangizning qolgan qismiga kirmaydi. Rasmdagi matn telefonning o'zida aniqlanadi (Google ML Kit), rasm hech qayerga yuborilmaydi va saqlanmaydi. Tanlangan so'zlarning tarjimasi avval ilovadagi lug'atdan, topilmasa Google Gemini API yoki Google Cloud Translation API orqali olinadi. Bunda faqat so'z matni yuboriladi.</p>
 
 <h2>5. Qulf ekrani va ruxsatlar</h2>
-<p>Qulf ekranida so'zlarni ko'rsatish uchun ilova quyidagi ruxsatlarni so'rashi mumkin: bildirishnomalar, boshqa ilovalar ustida ko'rsatish (overlay), fon xizmati va batareyani tejash cheklovidan chiqarish. Bu ruxsatlar faqat so'z kartalarini ko'rsatish uchun ishlatiladi. Ilova boshqa ilovalaringizdagi ma'lumotlarni o'qimaydi va ekranni yozib olmaydi. Ruxsatlarni istalgan vaqtda telefon sozlamalaridan olib tashlashingiz mumkin.</p>
+<p>Qulf ekranida so'zlarni ko'rsatish uchun Esla bildirishnoma ruxsatini so'raydi va kartani fon xizmati (foreground service) orqali yangilab turadi. Telefon qayta yoqilganda karta avtomatik tiklanadi. Ixtiyoriy "To'liq karta" rejimi uchun "boshqa ilovalar ustida ko'rsatish" ruxsati so'raladi. Bu ruxsatsiz ham ilova to'liq ishlaydi. Batareya va avtoishga tushirish sozlamalarini ochish tugmalari faqat tizimning sozlamalar sahifasini ochadi, tanlovni o'zingiz qilasiz. "Lock screen sog'lig'i" sahifasi faqat telefon sozlamalarini o'qiydi va hech qayerga yubormaydi. Esla boshqa ilovalaringiz ma'lumotlarini o'qimaydi va ekranni yozib olmaydi. Ruxsatlarni istalgan vaqtda telefon sozlamalaridan olib tashlashingiz mumkin.</p>
 
 <h2>6. Uchinchi tomon xizmatlari</h2>
-<p>Ilova quyidagi Google xizmatlaridan foydalanadi: Google Sign-In, Firebase (Authentication, Cloud Firestore, Cloud Storage, Cloud Messaging, Remote Config, Analytics, Crashlytics) va Google ML Kit. Bu xizmatlar ma'lumotlarni o'z maxfiylik siyosatlariga muvofiq qayta ishlaydi: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a> va <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a>.</p>
+<p>Ilova quyidagi Google xizmatlaridan foydalanadi: Google Sign-In, Firebase (Authentication, Cloud Firestore, Cloud Messaging, Remote Config, Analytics, Crashlytics), Google ML Kit (qurilmada), Google Gemini API va Google Cloud Translation API (faqat so'z matni), Google Play In-App Updates, telefonning o'z matnni nutqqa aylantirish (TTS) xizmati va YouTube. Bu xizmatlar ma'lumotlarni o'z maxfiylik siyosatlariga muvofiq qayta ishlaydi: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a> va <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a>.</p>
+<h3>Video qo'llanma (YouTube)</h3>
+<p>Ilovadagi "Video qo'llanma" YouTube orqali ko'rsatiladi. Video faqat siz ▶ tugmasini bosganingizda yuklanadi; shundan so'ng qurilmangiz Google'ning YouTube xizmatiga (youtube-nocookie.com, maxfiylik kuchaytirilgan rejim) ulanadi va YouTube o'z maxfiylik siyosatiga muvofiq texnik ma'lumotlarni (masalan IP manzil, qurilma turi) qayta ishlashi mumkin: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>. Esla bu ma'lumotlarni olmaydi va saqlamaydi. Videoni ko'rmasangiz, YouTube'ga hech qanday so'rov yuborilmaydi.</p>
 
 <h2>7. Ma'lumotlarni saqlash va o'chirish</h2>
-<p>Ma'lumotlaringiz akkauntingiz mavjud bo'lgan davrda saqlanadi. Akkauntni va unga bog'liq barcha ma'lumotlarni ilovaning Sozlamalar bo'limidagi "Akkauntni o'chirish" tugmasi orqali o'chirishingiz mumkin. Ilovaga kira olmasangiz, quyidagi elektron pochtaga o'chirish so'rovini yuboring, biz uni 30 kun ichida bajaramiz. Qonun talab qilgan hollarda va xavfsizlik zaxira nusxalarida ayrim ma'lumotlar qisqa muddat saqlanib qolishi mumkin.</p>
+<p>Ma'lumotlaringiz akkauntingiz mavjud bo'lgan davrda saqlanadi. Akkauntni va unga bog'liq barcha ma'lumotlarni ilovadagi "Hisobni va ma'lumotlarni o'chirish" tugmasi orqali (pastdagi bo'limga qarang) o'chirishingiz mumkin. Ilovaga kira olmasangiz, quyidagi elektron pochtaga o'chirish so'rovini yuboring, biz uni 30 kun ichida bajaramiz. Qonun talab qilgan hollarda va xavfsizlik zaxira nusxalarida ayrim ma'lumotlar qisqa muddat saqlanib qolishi mumkin.</p>
 
 <h2>8. Xavfsizlik</h2>
 <p>Ma'lumotlar uzatilganda shifrlangan (HTTPS) aloqa orqali yuboriladi va Firebase xavfsizlik qoidalari bilan himoyalanadi: har bir foydalanuvchi faqat o'z ma'lumotlariga kira oladi. Biroq internet orqali uzatishning mutlaq xavfsizligini kafolatlab bo'lmaydi.</p>
@@ -101,16 +105,18 @@
 
 <h2>2. Data we collect</h2>
 <h3>Account data</h3>
-<p>You sign in with your Google account. Your name, email address and profile photo are provided to us through Google Sign-In and Firebase Authentication. We never see or store your Google password.</p>
+<p>You sign in with your Google account. Your name, email address and profile photo link (the photo stays with Google) are provided to us through Google Sign-In and Firebase Authentication. We never see or store your Google password.</p>
 <h3>Learning data</h3>
 <ul>
   <li>selected language, level, stages and test results;</li>
   <li>learned words and review progress (progress, streak, points);</li>
-  <li>personal words you add (Daily Vocabulary) and their schedule;</li>
+  <li>personal words you add ("My vocabulary") and their schedule;</li>
   <li>app settings (interval, night mode, font size and others).</li>
 </ul>
 <h3>Technical data</h3>
-<p>To keep the app working well, Firebase Analytics and Firebase Crashlytics collect device model, operating system version, app version, crash reports and usage statistics. A device notification token (Firebase Cloud Messaging) is stored to deliver push notifications.</p>
+<p>To keep the app working well, Firebase Analytics and Firebase Crashlytics collect device model, operating system version, app version, crash reports and usage statistics. The device notification token is processed by Firebase Cloud Messaging to deliver push notifications; we do not store it in our database. To find out whether a newer version exists, the app asks Google Play (In-App Updates) and Firebase Remote Config for the version number only; no personal data is sent. Esla does not collect the advertising ID.</p>
+<h3>Error reports</h3>
+<p>If you report a mistake in a word or translation, the message, the word ID and your email are stored. They are used only to fix the content and are deleted together with your account.</p>
 
 <h2>3. How we use data</h2>
 <ul>
@@ -122,16 +128,18 @@
 <p>We do not sell your data and do not share it with third parties for advertising. The app contains no ads.</p>
 
 <h2>4. Camera and photos</h2>
-<p>If you use the "add words from a photo" feature, the app asks for camera or gallery access. Text in the picture is recognized on your device (Google ML Kit). Translations of recognized words may be obtained on the device or through a translation service; only the word text is sent, not the photo. You can revoke the permission in your phone settings at any time; only that feature will stop working.</p>
+<p>When you add words from a photo, you take or pick the image with your phone's camera app or the system photo picker. Esla does not request the camera permission and cannot access the rest of your gallery. Text recognition runs on your device (Google ML Kit). The photo is never uploaded or stored. Translations come from the built-in dictionary first, then from the Google Gemini API or the Google Cloud Translation API. Only the word text is sent.</p>
 
 <h2>5. Lock screen and permissions</h2>
-<p>To show cards on the lock screen the app may ask for: notifications, display over other apps (overlay), a foreground service, and exemption from battery optimization. These permissions are used only to display word cards. The app does not read data from your other apps and does not record your screen. You can remove these permissions at any time in your phone settings.</p>
+<p>To show words on the lock screen, Esla asks for the notification permission and keeps the card updated with a foreground service. The card is restored automatically after the phone restarts. The optional full-screen card mode asks for "display over other apps". The app works fully without it. The battery and autostart buttons only open the system settings pages, and you decide there. The "Lock screen health" page only reads your phone's settings and sends nothing anywhere. Esla never reads other apps' data and does not record your screen. You can remove these permissions at any time in your phone settings.</p>
 
 <h2>6. Third-party services</h2>
-<p>The app uses these Google services: Google Sign-In, Firebase (Authentication, Cloud Firestore, Cloud Storage, Cloud Messaging, Remote Config, Analytics, Crashlytics) and Google ML Kit. They process data under their own privacy policies: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a> and <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a>.</p>
+<p>The app uses these Google services: Google Sign-In, Firebase (Authentication, Cloud Firestore, Cloud Messaging, Remote Config, Analytics, Crashlytics), Google ML Kit (on device), the Google Gemini API and Google Cloud Translation API (word text only), Google Play In-App Updates, your phone's text-to-speech engine, and YouTube. They process data under their own privacy policies: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a> and <a href="https://firebase.google.com/support/privacy">firebase.google.com/support/privacy</a>.</p>
+<h3>Video guide (YouTube)</h3>
+<p>The in-app "Video guide" is played through YouTube. The video loads only when you tap ▶; your device then connects to Google's YouTube service (youtube-nocookie.com, privacy-enhanced mode), and YouTube may process technical data such as your IP address and device type under its own privacy policy: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>. Esla does not receive or store this data. If you do not play the video, no request is sent to YouTube.</p>
 
 <h2>7. Data retention and deletion</h2>
-<p>Your data is kept while your account exists. You can delete your account and all associated data with the "Delete account" button in the app's Settings. If you cannot access the app, email a deletion request to the address below and we will complete it within 30 days. Some data may remain for a short time in security backups or where the law requires.</p>
+<p>Your data is kept while your account exists. You can delete your account and all associated data with the "Delete account and data" button in the app (see the section below). If you cannot access the app, email a deletion request to the address below and we will complete it within 30 days. Some data may remain for a short time in security backups or where the law requires.</p>
 
 <h2>8. Security</h2>
 <p>Data is transmitted over encrypted connections (HTTPS) and protected by Firebase security rules so each user can access only their own data. However, no method of transmission over the internet is completely secure.</p>
@@ -147,6 +155,38 @@
 
 <h2>12. Contact</h2>
 <div class="box"><p>For questions or a data deletion request: <a href="mailto:adisoftuz@gmail.com">adisoftuz@gmail.com</a></p></div>
+
+</section>
+
+<section class="lang" id="delete-account">
+
+<h2>Hisobni va ma'lumotlarni o'chirish / Delete your account and data</h2>
+
+<div lang="uz">
+<h3>Esla hisobini va ma'lumotlarini o'chirish</h3>
+<p><strong>Ilova ichida:</strong></p>
+<ul>
+  <li>1. Esla ilovasini oching.</li>
+  <li>2. Profil → Sozlamalar → "Akkaunt va ma'lumot" → "Hisobni va ma'lumotlarni o'chirish" ni bosing.</li>
+  <li>3. Tasdiqlang. Kerak bo'lsa, Google akkauntingiz bilan qayta kiring.</li>
+</ul>
+<p><strong>Ilovaga kira olmasangiz:</strong> <a href="mailto:adisoftuz@gmail.com">adisoftuz@gmail.com</a> manziliga Google akkauntingiz emailidan "Esla hisobimni o'chiring" mavzusida xat yuboring. So'rov 30 kun ichida bajariladi.</p>
+<p><strong>Nimalar o'chiriladi:</strong> Google orqali kirish akkaunti (Firebase Authentication), profil (ism, email, profil rasmi havolasi), o'quv progressi, bosqichlar, statistika, "Mening lug'atim"dagi so'zlar, yuborgan xato haqidagi xabarlaringiz va telefondagi lokal ma'lumotlar.</p>
+<p><strong>Nimalar saqlanib qolishi mumkin:</strong> Firebase Crashlytics va Analytics'dagi anonim texnik ma'lumotlar Google'ning saqlash muddatlari bo'yicha (Analytics: 14 oygacha, Crashlytics: 90 kungacha) saqlanadi. Ular hisobingizga bog'lanmagan. Zaxira nusxalar 30 kun ichida o'chadi.</p>
+</div>
+
+<div lang="en">
+<h3>Delete your Esla account and data</h3>
+<p><strong>In the app:</strong></p>
+<ul>
+  <li>1. Open Esla.</li>
+  <li>2. Go to Profile → Settings → "Akkaunt va ma'lumot" (Account and data) → "Hisobni va ma'lumotlarni o'chirish" (Delete account and data).</li>
+  <li>3. Confirm. Sign in with Google again if asked.</li>
+</ul>
+<p><strong>If you cannot open the app:</strong> email <a href="mailto:adisoftuz@gmail.com">adisoftuz@gmail.com</a> from your Google account's address with the subject "Delete my Esla account". We complete requests within 30 days.</p>
+<p><strong>What is deleted:</strong> your sign-in account (Firebase Authentication), profile (name, email, profile photo link), learning progress, stages, statistics, "My vocabulary" words, error reports you sent, and local data on the phone.</p>
+<p><strong>What may be kept:</strong> anonymous technical data in Firebase Crashlytics and Analytics is kept for Google's retention periods (Analytics up to 14 months, Crashlytics up to 90 days) and is not linked to your account. Backups are deleted within 30 days.</p>
+</div>
 
 </section>
 
